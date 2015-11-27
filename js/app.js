@@ -1,9 +1,14 @@
 (function(){
 	'use strict';
 
-	var $homeInput = $('.App-HomeInput');
-
 	$('.App-SetFocus-HomeInput').on('click', function() {
-		$homeInput.focus();
+		$('.App-HomeInput').focus();
 	});
+
+	$('.App-Open-SecondPage').on('click', function() {
+		$('.SecondPage').html($('#SecondPageTemplate').text());
+		$('.SecondPage').removeClass('hidden');
+		$('.App-SecondPage-TopInput').focus();
+	});
+
 })()
