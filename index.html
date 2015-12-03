@@ -3,7 +3,7 @@
 <head>
     <meta charset="urf-8">
     <title>Test Focus In Mobile</title>
-    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -42,16 +42,38 @@
                         class="btn
                                btn-success
                                App-Open-SecondPage">
-                    Open second page
+                    Input on top
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </button>
+            </p>
+        </div>
+        <div class="clearfix">
+            <p class="pull-right">
+                <button type="submit"
+                        class="btn
+                               btn-success
+                               App-Open-ThirdPage">
+                    Input on top
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </button>
+            </p>
+        </div>
+        <div class="clearfix">
+            <p class="pull-right">
+                <button type="submit"
+                        class="btn
+                               btn-default
+                               App-Open-LongTextareaPage">
+                    Long Textarea
                 </button>
             </p>
         </div>
     </div>
 
+
+    <!-- Second Page -->
     <div class="Page SecondPage hidden">
     </div>
-
     <script type="text/template" id="SecondPageTemplate">
         <div class="container">
             <h2>Second Page</h2>
@@ -64,6 +86,35 @@
                     <input type="text" class="form-control App-SecondPage-TopInput">
                 </div>
             </form>
+            <div class="clearfix">
+                <p class="pull-right">
+                    <button type="submit"
+                            class="btn
+                                   btn-success
+                                   App-Open-HomePage">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        Return to home page
+                    </button>
+                </p>
+            </div>
+        </div>
+    </script>
+
+
+    <!-- Third Page -->
+    <div class="Page ThirdPage hidden">
+    </div>
+    <script type="text/template" id="ThirdPageTemplate">
+    </script>
+
+    <!-- Long Textarea Page -->
+    <div class="Page LongTextareaPage hidden">
+    </div>
+    <script type="text/template" id="LongTextareaPageTemplate">
+        <div class="container">
+            <p>
+                <textarea class="form-control" rows="20"></textarea>
+            </p>
         </div>
     </script>
     
